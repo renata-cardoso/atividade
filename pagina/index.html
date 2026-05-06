@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria - Pedidos</title>
+    <link rel="stylesheet" href="../estilo/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Doceria</h1>
+</header>
+
+<main class="container">
+
+    <section class="form-section">
+        <h2>Novo Pedido</h2>
+
+        <input type="text" id="cliente" placeholder="Nome do cliente">
+        <input type="text" id="telefone" placeholder="Telefone">
+
+        <select id="doce">
+            <option value="">Selecione um doce</option>
+            <option value="Brigadeiro">Brigadeiro</option>
+            <option value="Bolo de Cenoura">Bolo de Cenoura</option>
+            <option value="Bolo de Laranja">Bolo de Laranja</option>
+            <option value="Palha Italiana">Palha Italiana</option>
+            <option value="Copo da Felicidade">Copo da Felicidade</option>
+        </select>
+
+        <select id="bebida">
+            <option value="">Selecione uma bebida</option>
+            <option value="Refrigerante">Refrigerante</option>
+            <option value="Suco">Suco</option>
+            <option value="Café">Café</option>
+        </select>
+
+        <input type="number" id="preco" placeholder="Preço" readonly>
+
+        <button onclick="adicionarPedido()">Adicionar Pedido</button>
+    </section>
+
+    <section class="lista-section">
+        <h2>Pedidos</h2>
+        <ul id="listaPedidos"></ul>
+
+        <h3 id="totalPedidos">Total: R$0.00</h3>
+    </section>
+
+</main>
+
+<script src="../script/script.js"></script>
+</body>
+</html>
